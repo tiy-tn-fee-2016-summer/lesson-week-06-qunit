@@ -17,6 +17,9 @@
     console.log(window.oldSchool);
     console.log(reallyOldSchool);
 
+    // Declared functions are hoisted to the top of their scope
+    console.log(start);
+
     function start() {
       'use strict';
 
@@ -24,7 +27,7 @@
 
       console.log('a before declaring var', a);
 
-      var a;
+      var a; // Would not work with let since let does not hoist
       console.log('a before assigning', a);
 
       a = 5;
