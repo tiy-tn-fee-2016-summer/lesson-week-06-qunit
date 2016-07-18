@@ -11,6 +11,20 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    var oldSchool = 'Yo';
+    window.reallyOldSchool = 'Dawg';
+
+    console.log(window.oldSchool);
+    console.log(reallyOldSchool);
+
+    function start() {
+      'use strict';
+
+      window.x = 'Hey';
+    }
+
+    start();
+    console.log(x);
   </script>
 </body>
 </html>
