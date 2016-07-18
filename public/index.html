@@ -34,8 +34,20 @@
       console.log('a after declaring var', a);
     }
 
+    console.log('hoistMe is a var so it has not been assigned yet', hoistMe);
+
+
+    // This annonymous function can never be called
+    (function() {
+      var x = 'something';
+    })
+
+    var hoistMe = function() {
+      console.log('HI');
+    };
+
     start();
-    console.log(x);
+    console.log('x', x);
   </script>
 </body>
 </html>
