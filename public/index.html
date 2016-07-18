@@ -21,6 +21,14 @@
       'use strict';
 
       window.x = 'Hey';
+
+      console.log('a before declaring var', a);
+
+      var a;
+      console.log('a before assigning', a);
+
+      a = 5;
+      console.log('a after declaring var', a);
     }
 
     start();
